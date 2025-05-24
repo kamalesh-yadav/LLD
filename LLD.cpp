@@ -12,7 +12,7 @@ class Image
     Image(string name) : name(name), metadata(""), content(""){}
 };
 // 1.Responsibility: capturing Image
-class ImageCapturer
+class ImageEditor
 {
     public:
     void clickImage(Image &img)
@@ -68,7 +68,7 @@ class ImageSaver
 int main()
 {
     Image myImage("My photo");
-    ImageCapturer capture;
+    ImageEditor capture;
     ImageCropper crop;
     ImageSharpner sharpner;
     ImageColorizer color;
